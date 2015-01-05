@@ -31,8 +31,14 @@ class Rules_fullbags_ru:
     size            = ".//div[@class='description_product']/div/table/tr[6]/td[@class='text_table_2']" # text
 
     urls = [
-        (u'Женские сумки', 'http://fullbags.ru/catalog/zhenskie-sumki?page=all')
-        #, ('Мужские сумки', 'http://fullbags.ru/catalog/muzhskie-sumki?page=all')
+        (u'Женские сумки',  'http://fullbags.ru/catalog/zhenskie-sumki?page=all'),
+        (u'Мужские сумки',  'http://fullbags.ru/catalog/muzhskie-sumki?page=all'),
+        (u'Саквояжи',       'http://fullbags.ru/catalog/sakvoyazhi?page=all'),
+        (u'Клатчи и папки', 'http://fullbags.ru/catalog/klatchi-i-papki?page=all'),
+        (u'Рюкзаки',        'http://fullbags.ru/catalog/ryukzaki?page=all'),
+        (u'Кошельки',       'http://fullbags.ru/catalog/koshelki?page=all'),
+        (u'Перчатки',       'http://fullbags.ru/catalog/perchatki'),
+        (u'Ремни',          'http://fullbags.ru/catalog/remni')
     ]
 
 #-------------------------------------------------
@@ -71,7 +77,14 @@ class Prod:
             "Изображения",          # имена локальных файлов или url изображений в интернете, через запятую
             "Заголовок страницы",   # заголовок страницы товара (Meta title)
             "Ключевые слова",       # ключевые слова (Meta keywords)
-            "Описание страницы"     # описание страницы товара (Meta description)
+            "Описание страницы",    # описание страницы товара (Meta description)
+            # дополнительные характеристики
+            "Бренд",
+            "Материал",
+            "Цвет",
+            "Подкладка",
+            "Размеры",
+            "Размер"
         ]
         s = '"' + '";"'.join(t) + '"'
         print s
@@ -95,7 +108,14 @@ class Prod:
             s.images,       # Изображения имена локальных файлов или url изображений в интернете, через запятую
             s.title,        # Заголовок страницы заголовок страницы товара (Meta title)
             s.title,        # Ключевые слова ключевые слова (Meta keywords)
-            s.title         # Описание страницы описание страницы товара (Meta description)
+            s.title,        # Описание страницы описание страницы товара (Meta description)
+            # add chars
+            s.brand,        # Бренд
+            s.material,     # Материал
+            s.color,        # Цвет
+            s.podkladka,    # Подкладка
+            s.dimensions,   # Размеры
+            s.size          # Размер
         ]
 
         out = u''
@@ -171,8 +191,10 @@ def norm_text(txt):
 #-------------------------------------------------
 def Dl(rules, images_dir):
     try:
-        os.mkdir(img_dir)
-    except:
+        print >> sys.stderr, "creating dir"
+        os.mkdir(images_dir)
+    except Exception, e:
+        print >> sys.stderr, "can't create, exc: '%s'" % str(e)
         pass
 
     r = rules   # shorten alias
@@ -217,6 +239,7 @@ def Dl(rules, images_dir):
                 continue
 
             p = prod_tree.getroot().xpath(r.prod_page_div)[0]
+            # parse characteristics
             try:
                 prod.desc = norm_text( p.xpath(r.desc)[0].text_content() )
                 prod.brand = norm_text( p.xpath(r.brand)[0].text )
@@ -225,7 +248,11 @@ def Dl(rules, images_dir):
                 prod.podkladka = norm_text( p.xpath(r.podkladka)[0].text )
                 prod.dimensions = norm_text( p.xpath(r.dimensions)[0].text )
                 prod.size = norm_text( p.xpath(r.size)[0].text )
+            except Exception, e:
+                print >> sys.stderr, "WARNING: Error parse characteristics, exception: '%s'" % str(e)
 
+            # parse images
+            try:
                 images = p.xpath(r.images)
                 prod.images = [norm_url(front_url, x.get('href')) for x in images]
 
@@ -234,15 +261,15 @@ def Dl(rules, images_dir):
 
                 prod.prod_page = translit(prod.brand) + '-' + translit(prod.title)
             except Exception, e:
-                print >> sys.stderr, "Error parse prod-description, exception: '%s'" % str(e)
+                print >> sys.stderr, "Error parse images, exception: '%s'" % str(e)
                 raise
                 continue
 
             prod.Print()
-
+            '''
             if n_prod > 19:
                 sys.exit(0)
-
+            '''
 
 
 Dl( Rules_fullbags_ru(), images_dir = './images' )
