@@ -217,7 +217,7 @@ def Dl(rules, images_dir):
         n_prod = 0
         for p in prod_list:
             n_prod += 1
-            print >> sys.stderr, " . downloading product #%d" % n_prod
+            print >> sys.stderr, " . downloading product #%d / %d" % (n_prod, len(prod_list))
 
             prod = Prod()
             prod.category = category
