@@ -175,7 +175,7 @@ class User:
                         continue
                     w = row[0].decode(encoding)
                     t = row[1].decode(encoding)
-                    words[w] = t
+                    words[w] = (t, n)
         except Exception, e:
             logger.Log("ERROR while parsing dictionary file %s. Excpetion: %s" % (fname, str(e)))
             return False
@@ -185,15 +185,19 @@ class User:
             w = udict['words'][i]
             wtext = w['word']
             if wtext in words:
-                w['translation'] = words[wtext]
+                (translation, index) = words[wtext]
+                w['translation'] = translation
                 del words[wtext]
 
         # добавляем оставшиеся слова, которые не были найдены
+        # - сначала сортим список в том порядке, который был в словаре
+        words_list = [(word, trans, index) for (word, (trans, index)) in words.iteritems()]
+        words_list = sorted(words_list, key=lambda x: x[2])
         i = len(udict['words'])
-        for (w, t) in words.iteritems():
+        for (word, trans, idx) in words_list:
             udict['words'].append( dict(init_Word) )
-            udict['words'][i]['word'] = w
-            udict['words'][i]['translation'] = t
+            udict['words'][i]['word'] = word
+            udict['words'][i]['translation'] = trans
             i += 1
 
         logger.Log(" - added %d new word(s)" % len(words))
@@ -210,13 +214,23 @@ class Learner:
         40 * 60,
         3 * 60 * 60,
         5 * 60 * 60,
-        24 * 60 * 60
+        24 * 60 * 60,
+        3 * 24 * 60 * 60,
+        7 * 24 * 60 * 60
     ]
 
     def __init__(self, udict):
         self.d = udict
 
     def learn(self):
+        '''
+        TODO:
+        1. для конкретного варианта перевода предлагать список слов не случайных, а максимально похожих друг на друга
+           по написанию - отбирать по дистанции левинштейна;
+           для этого, возможно, сохранять отдельно таблицу схожести слов, чтобы не рассчитывать эти дистации каждый раз.
+        2. рандомно выбирать направление перевода - от инглиша к русскому или наоборот.
+        '''
+
         if len(self.d['words']) == 0:
             raise Exception("Can't to teach you. Empty dict!")
 
@@ -227,25 +241,35 @@ class Learner:
             test += 1
 
             # выбираем слово для теста
-            selected_word = self.d['words'][0]
+            rand_widx = random.randint(0, len(self.d['words'])-1)
+            selected_word = self.d['words'][ rand_widx ]
             level = selected_word['asked'] / (selected_word['mistakes'] + 1)
-            level %= len(self.progress)
-            selected_word_period = self.progress[level]
+            level = min(level, len(self.progress)-1)
+            selected_word_period = self.progress[level] + 1
 
             for w in self.d['words']:
                 # рассчитываем, на какой стадии находится юзер по данному слову
                 level = w['asked'] / (w['mistakes'] + 1)
-                level %= len(self.progress)
+                level = min(level, len(self.progress)-1)
+
                 # берём период, через который нужно повторить данное слово
                 word_period = self.progress[level]
+
+                # DEBUG
+                #left_word_period = int(time.time()) - w['last_asked_time']
+                #print >> sys.stderr, "'%s': asked=%d, mistakes=%d, level=%d, word_period=%d, selected_word_period=%d, left_word_period=%d" % \
+                #                     (w['word'], w['asked'], w['mistakes'], level, word_period, selected_word_period, left_word_period)
+                # DEBUG
+
                 # если ранее найдено ближайшее по времени слово, это пропускаем
-                if selected_word_period <= word_period:
-                    continue
+                #if selected_word_period <= word_period:
+                #    continue
                 # не настало ли время для этого слова?
                 left_word_period = int(time.time()) - w['last_asked_time']
                 if left_word_period >= word_period:
                     selected_word = w
                     selected_word_period = word_period
+                    break
 
             # ask
             # - генерим варианты ответов

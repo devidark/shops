@@ -1,3071 +1,530 @@
 {
-  "studying_dict": 1,
-  "name": "alex",
+  "studying_dict": 0, 
+  "name": "alex", 
   "dicts": [
     {
-      "hash": "a6d01b76107142a8bf8a56b82fe96147b0c3891b",
+      "hash": "d526ae724a507e1bd1620371387a3be115e5dd75", 
+      "file": "D:\\proger\\git\\english\\dict.csv", 
       "words": [
         {
-          "last_asked_time": 1424094280,
-          "translation": "запрещать, возбранять, мешать, препятствовать",
-          "mistakes": 0,
-          "word": "prohibit",
-          "asked": 3
-        },
+          "last_asked_time": 1424865064, 
+          "translation": "запрещать, возбранять, мешать, препятствовать", 
+          "mistakes": 1, 
+          "word": "prohibit", 
+          "asked": 14
+        }, 
         {
-          "last_asked_time": 1424094293,
-          "translation": "жёсткий, упругий, строгий, суровый",
-          "mistakes": 0,
-          "word": "tough",
-          "asked": 3
-        },
+          "last_asked_time": 1424865067, 
+          "translation": "жёсткий, упругий, строгий, суровый", 
+          "mistakes": 1, 
+          "word": "tough", 
+          "asked": 13
+        }, 
         {
-          "last_asked_time": 1424094299,
-          "translation": "тонко",
-          "mistakes": 0,
-          "word": "subtly",
-          "asked": 3
-        },
+          "last_asked_time": 1424869435, 
+          "translation": "тонко", 
+          "mistakes": 0, 
+          "word": "subtly", 
+          "asked": 13
+        }, 
         {
-          "last_asked_time": 1424094337,
-          "translation": "приспособление, объект, возможность, установка",
-          "mistakes": 0,
-          "word": "facility",
-          "asked": 3
-        },
+          "last_asked_time": 1424869439, 
+          "translation": "приспособление, объект, возможность, установка", 
+          "mistakes": 0, 
+          "word": "facility", 
+          "asked": 13
+        }, 
         {
-          "last_asked_time": 1424094341,
-          "translation": "обратите внимание",
-          "mistakes": 0,
-          "word": "do note",
-          "asked": 3
-        },
+          "last_asked_time": 1424869481, 
+          "translation": "заранее, заблаговременно", 
+          "mistakes": 0, 
+          "word": "beforehand", 
+          "asked": 13
+        }, 
         {
-          "last_asked_time": 1424094346,
-          "translation": "забывчивый, невнимательный",
-          "mistakes": 0,
-          "word": "oblivious",
-          "asked": 3
-        },
+          "last_asked_time": 1424869667, 
+          "translation": "получать, добывать, приобретать, доставать", 
+          "mistakes": 1, 
+          "word": "obtain", 
+          "asked": 11
+        }, 
         {
-          "last_asked_time": 1424094389,
-          "translation": "скорее, точнее, слегка, довольно-таки, пожалуй, наоборот, отнюдь, а не, вместо, в отличие от",
-          "mistakes": 0,
-          "word": "rather",
-          "asked": 3
-        },
+          "last_asked_time": 1424862123, 
+          "translation": "(прил.) устаревший, (сущ.) наследство", 
+          "mistakes": 0, 
+          "word": "legacy", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094392,
-          "translation": "за, позади, сзади",
-          "mistakes": 0,
-          "word": "behind",
-          "asked": 3
-        },
+          "last_asked_time": 1424862131, 
+          "translation": "обратите внимание", 
+          "mistakes": 0, 
+          "word": "do note", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094418,
-          "translation": "щедрость, дар, одаривать, награждать",
-          "mistakes": 0,
-          "word": "bounty",
-          "asked": 3
-        },
+          "last_asked_time": 1424862138, 
+          "translation": "забывчивый, невнимательный", 
+          "mistakes": 0, 
+          "word": "oblivious", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094421,
-          "translation": "выжить, пережить, дожить",
-          "mistakes": 0,
-          "word": "survive",
-          "asked": 3
-        },
+          "last_asked_time": 1424862064, 
+          "translation": "сносить, разрушать, разбирать, сбивать", 
+          "mistakes": 1, 
+          "word": "take down", 
+          "asked": 10
+        }, 
         {
-          "last_asked_time": 1424094426,
-          "translation": "проблема, задача, выпуск, издание",
-          "mistakes": 0,
-          "word": "issue",
-          "asked": 3
-        },
+          "last_asked_time": 1424862141, 
+          "translation": "усилие рычага, рычаг, двигатель; усиливать, использовать с выгодой", 
+          "mistakes": 0, 
+          "word": "leverage", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094492,
-          "translation": "шаблон, стереотип, образец, газетный материал",
-          "mistakes": 0,
-          "word": "boilerplate",
-          "asked": 3
-        },
+          "last_asked_time": 1424862144, 
+          "translation": "скорее, точнее, слегка, довольно-таки, пожалуй, наоборот, отнюдь, а не, вместо, в отличие от", 
+          "mistakes": 0, 
+          "word": "rather", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094538,
-          "translation": "разрешать, допускать, разрешение, допуск",
-          "mistakes": 0,
-          "word": "permit",
-          "asked": 3
-        },
+          "last_asked_time": 1424870057, 
+          "translation": "относительно, касательно, о", 
+          "mistakes": 3, 
+          "word": "regarding, concerning", 
+          "asked": 16
+        }, 
         {
-          "last_asked_time": 1424094545,
-          "translation": "для того чтобы",
-          "mistakes": 0,
-          "word": "in order to",
-          "asked": 3
-        },
+          "last_asked_time": 1424862081, 
+          "translation": "обазятельный, непременный, необходимый", 
+          "mistakes": 1, 
+          "word": "obligatory", 
+          "asked": 10
+        }, 
         {
-          "last_asked_time": 1424094549,
-          "translation": "слияние, соединение, сосредоточение, скопление",
-          "mistakes": 0,
-          "word": "confluence",
-          "asked": 3
-        },
+          "last_asked_time": 1424862146, 
+          "translation": "разоблачать, развенчивать", 
+          "mistakes": 0, 
+          "word": "debunk", 
+          "asked": 12
+        }, 
         {
-          "last_asked_time": 1424094554,
-          "translation": "прошедший",
-          "mistakes": 0,
-          "word": "elapsed",
-          "asked": 3
-        },
+          "last_asked_time": 1424862087, 
+          "translation": "за, позади, сзади", 
+          "mistakes": 0, 
+          "word": "behind", 
+          "asked": 11
+        }, 
         {
-          "last_asked_time": 1424091554,
-          "translation": "продолжай, иди вперёд",
-          "mistakes": 0,
-          "word": "go ahead",
+          "last_asked_time": 1424858111, 
+          "translation": "щедрость, дар, одаривать, награждать", 
+          "mistakes": 0, 
+          "word": "bounty", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858113, 
+          "translation": "выжить, пережить, дожить", 
+          "mistakes": 0, 
+          "word": "survive", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858117, 
+          "translation": "также, тоже", 
+          "mistakes": 0, 
+          "word": "as well", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858120, 
+          "translation": "проблема, задача, выпуск, издание", 
+          "mistakes": 0, 
+          "word": "issue", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858154, 
+          "translation": "(сущ) запас, фонд, резерв, сырьё; (глаг) иметь резерв, в наличии, хранить на складе; (прил) шаблонный", 
+          "mistakes": 0, 
+          "word": "stock", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858157, 
+          "translation": "шаблон, стереотип, образец, газетный материал", 
+          "mistakes": 0, 
+          "word": "boilerplate", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424869749, 
+          "translation": "хотя, не смотря на, всё же, даже, хотя бы, путь даже, не взирая на", 
+          "mistakes": 2, 
+          "word": "though", 
+          "asked": 14
+        }, 
+        {
+          "last_asked_time": 1424858161, 
+          "translation": "разрешать, допускать, разрешение, допуск", 
+          "mistakes": 0, 
+          "word": "permit", 
+          "asked": 9
+        }, 
+        {
+          "last_asked_time": 1424858167, 
+          "translation": "однако, тем не менее, как бы ни", 
+          "mistakes": 0, 
+          "word": "however", 
+          "asked": 8
+        }, 
+        {
+          "last_asked_time": 1424862096, 
+          "translation": "для того чтобы", 
+          "mistakes": 0, 
+          "word": "in order to", 
+          "asked": 8
+        }, 
+        {
+          "last_asked_time": 1424846076, 
+          "translation": "слияние, соединение, сосредоточение, скопление", 
+          "mistakes": 0, 
+          "word": "confluence", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846083, 
+          "translation": "ободрять, поощрять, потакать, подстрекать, содействовать, вдохновлять", 
+          "mistakes": 0, 
+          "word": "encourage", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869754, 
+          "translation": "кроме того, более того", 
+          "mistakes": 1, 
+          "word": "besides", 
+          "asked": 10
+        }, 
+        {
+          "last_asked_time": 1424846107, 
+          "translation": "параллельно, рядом, вместе, в одном направлении; вдоль, по, во время", 
+          "mistakes": 0, 
+          "word": "along", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846109, 
+          "translation": "продолжай, иди вперёд", 
+          "mistakes": 0, 
+          "word": "go ahead", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424862104, 
+          "translation": "недавний, последний; новейший, свежий, современный", 
+          "mistakes": 1, 
+          "word": "recent", 
+          "asked": 10
+        }, 
+        {
+          "last_asked_time": 1424846123, 
+          "translation": "указывать, показывать, обрисовывать", 
+          "mistakes": 0, 
+          "word": "outline", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846127, 
+          "translation": "прерывистый, скачкообразный", 
+          "mistakes": 0, 
+          "word": "intermittent", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869790, 
+          "translation": "свободный, освобождающий; освобождать, предоставлять льготу, иммунитет", 
+          "mistakes": 2, 
+          "word": "exempt", 
+          "asked": 13
+        }, 
+        {
+          "last_asked_time": 1424869794, 
+          "translation": "тщательно, досконально (прил.); уточнять, прорабатывать", 
+          "mistakes": 2, 
+          "word": "elaborate", 
+          "asked": 12
+        }, 
+        {
+          "last_asked_time": 1424846169, 
+          "translation": "усвоить, перенять, заимствовать, усыновлять", 
+          "mistakes": 0, 
+          "word": "adopt", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846206, 
+          "translation": "признавать, ценить, принимать во внимание", 
+          "mistakes": 0, 
+          "word": "appreciate", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846208, 
+          "translation": "выдавать результат, уступать, приносить плоды", 
+          "mistakes": 0, 
+          "word": "yield", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846211, 
+          "translation": "осторожнее (тактичнее), друг!", 
+          "mistakes": 0, 
+          "word": "go easy, friend!", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846214, 
+          "translation": "удобство, комфорт", 
+          "mistakes": 0, 
+          "word": "convenience", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846216, 
+          "translation": "явный, очевидный", 
+          "mistakes": 0, 
+          "word": "obvious", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869797, 
+          "translation": "произвольный, случайный, капризный", 
+          "mistakes": 3, 
+          "word": "arbitrary", 
+          "asked": 17
+        }, 
+        {
+          "last_asked_time": 1424870022, 
+          "translation": "переносить, претерпевать, испытывать", 
+          "mistakes": 5, 
+          "word": "undergo", 
+          "asked": 17
+        }, 
+        {
+          "last_asked_time": 1424846233, 
+          "translation": "прошедшее (время)", 
+          "mistakes": 0, 
+          "word": "elapsed (time)", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424846236, 
+          "translation": "украшать", 
+          "mistakes": 0, 
+          "word": "adorn", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869809, 
+          "translation": "(глаг) бороться, биться, делать усилия, (сущ) борьба, усилия, труд", 
+          "mistakes": 0, 
+          "word": "struggle", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869834, 
+          "translation": "(сущ) растрата, убыток; (глаг) тратить впустую, разорять, портить, изнурять; (прил) ненужный, бесполезный", 
+          "mistakes": 0, 
+          "word": "waste", 
+          "asked": 7
+        }, 
+        {
+          "last_asked_time": 1424869840, 
+          "translation": "удар, толчок, воздействие; ударять, воздействовать", 
+          "mistakes": 0, 
+          "word": "impact", 
+          "asked": 4
+        }, 
+        {
+          "last_asked_time": 1424870159, 
+          "translation": "таз (часть скелета)", 
+          "mistakes": 0, 
+          "word": "pelvis", 
+          "asked": 4
+        }, 
+        {
+          "last_asked_time": 1424870162, 
+          "translation": "пешеход", 
+          "mistakes": 0, 
+          "word": "pedestrian", 
+          "asked": 4
+        }, 
+        {
+          "last_asked_time": 1424870156, 
+          "translation": "столкновение, встреча; столкнуться, неожиданно встретиться", 
+          "mistakes": 1, 
+          "word": "encounter", 
+          "asked": 5
+        }, 
+        {
+          "last_asked_time": 1424870173, 
+          "translation": "ссылаться, направлять, отсылать, адресовать, обратиться", 
+          "mistakes": 0, 
+          "word": "refer", 
+          "asked": 4
+        }, 
+        {
+          "last_asked_time": 1424870176, 
+          "translation": "стоимость проезда, провоза багажа, пассажир; жить, поживать, путешествовать", 
+          "mistakes": 0, 
+          "word": "fare", 
+          "asked": 4
+        }, 
+        {
+          "last_asked_time": 1424870078, 
+          "translation": "отказываться, уклоняться, избегать", 
+          "mistakes": 0, 
+          "word": "waive", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870087, 
+          "translation": "(сущ) вознаграждение, гонорар; чаевые; (глаг) нанимать на работу, давать на чай", 
+          "mistakes": 0, 
+          "word": "fee", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870165, 
+          "translation": "подлежащий вычету", 
+          "mistakes": 0, 
+          "word": "deductible", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870169, 
+          "translation": "злоупотребление служебным положением", 
+          "mistakes": 0, 
+          "word": "malpractice suits", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870183, 
+          "translation": "назначение (врача), должность, пост", 
+          "mistakes": 0, 
+          "word": "appointment", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870188, 
+          "translation": "мошенничество", 
+          "mistakes": 0, 
+          "word": "fraud", 
+          "asked": 3
+        }, 
+        {
+          "last_asked_time": 1424870019, 
+          "translation": "требования, заявление, претензия", 
+          "mistakes": 0, 
+          "word": "claim", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424091559,
-          "translation": "указывать, показывать, обрисовывать",
-          "mistakes": 0,
-          "word": "outline",
+          "last_asked_time": 1424870025, 
+          "translation": "терапевт", 
+          "mistakes": 0, 
+          "word": "physician", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424091563,
-          "translation": "прерывистый, скачкообразный",
-          "mistakes": 0,
-          "word": "intermittent",
+          "last_asked_time": 1424870027, 
+          "translation": "рецепт", 
+          "mistakes": 0, 
+          "word": "prescription", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424094098,
-          "translation": "усвоить, перенять, заимствовать, усыновлять",
-          "mistakes": 0,
-          "word": "adopt",
+          "last_asked_time": 1424870032, 
+          "translation": "фрагмент, отрывок (текста), кусок, лоскут", 
+          "mistakes": 0, 
+          "word": "snippet", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424094123,
-          "translation": "признавать, ценить, принимать во внимание",
-          "mistakes": 0,
-          "word": "appreciate",
+          "last_asked_time": 1424870038, 
+          "translation": "по существу, существенно, в высшей степени, чрезвычайно", 
+          "mistakes": 0, 
+          "word": "essentially", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424094138,
-          "translation": "выдавать результат, уступать, приносить плоды",
-          "mistakes": 0,
-          "word": "yield",
+          "last_asked_time": 1424870041, 
+          "translation": "специальный, заточенный под эту цель", 
+          "mistakes": 0, 
+          "word": "ad hoc", 
           "asked": 2
-        },
+        }, 
         {
-          "last_asked_time": 1424094145,
-          "translation": "осторожнее (тактичнее), друг!",
-          "mistakes": 0,
-          "word": "go easy, friend!",
-          "asked": 2
-        },
+          "last_asked_time": 1424870200, 
+          "translation": "класть, помещать, налагать, фиксировать в опред.положении, возлагать", 
+          "mistakes": 1, 
+          "word": "impose", 
+          "asked": 3
+        }, 
         {
-          "last_asked_time": 1424094250,
-          "translation": "удобство, комфорт",
-          "mistakes": 0,
-          "word": "convenience",
-          "asked": 2
-        },
-        {
-          "last_asked_time": 1424094253,
-          "translation": "явный, очевидный",
-          "mistakes": 0,
-          "word": "obvious",
-          "asked": 2
-        },
-        {
-          "last_asked_time": 1424094266,
-          "translation": "произвольный, случайный, капризный",
-          "mistakes": 0,
-          "word": "arbitrary",
-          "asked": 2
-        },
-        {
-          "last_asked_time": 1424094272,
-          "translation": "украшать",
-          "mistakes": 0,
-          "word": "adorn",
-          "asked": 2
-        }
-      ],
-      "file": "D:\\proger\\english\\dict.csv",
-      "performed_tests": 0
-    },
-    {
-      "hash": "7c8cbc14dfb4ff32eddc830a49b0280cc81f69a4",
-      "file": "D:\\proger\\english\\minilex.csv",
-      "words": [
-        {
-          "last_asked_time": 1424098135,
-          "translation": "забыть",
-          "mistakes": 0,
-          "word": "forget",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098138,
-          "translation": "месяц",
-          "mistakes": 0,
-          "word": "month",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098141,
-          "translation": "веселый, -ая",
-          "mistakes": 0,
-          "word": "cheerful",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098148,
-          "translation": "спать",
-          "mistakes": 0,
-          "word": "sleep",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098149,
-          "translation": "ехать",
-          "mistakes": 0,
-          "word": "go",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098152,
-          "translation": "отец",
-          "mistakes": 0,
-          "word": "father",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098155,
-          "translation": "молодой, -ая",
-          "mistakes": 0,
-          "word": "young",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098157,
-          "translation": "послать",
-          "mistakes": 0,
-          "word": "send",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098160,
-          "translation": "к",
-          "mistakes": 0,
-          "word": "to",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098164,
-          "translation": "наконец",
-          "mistakes": 0,
-          "word": "finally",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098166,
-          "translation": "под",
-          "mistakes": 0,
-          "word": "under",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098169,
-          "translation": "полчаса",
-          "mistakes": 0,
-          "word": "half an hour",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098171,
-          "translation": "женщина",
-          "mistakes": 0,
-          "word": "woman",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098186,
-          "translation": "худший, -ая",
-          "mistakes": 0,
-          "word": "worse",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098189,
-          "translation": "очень",
-          "mistakes": 0,
-          "word": "very",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098197,
-          "translation": "сколько? (нельзя сосчитать)",
-          "mistakes": 0,
-          "word": "how much?",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098206,
-          "translation": "беспокоиться (о)",
-          "mistakes": 0,
-          "word": "worry (about)",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098209,
-          "translation": "каждый, -ая",
-          "mistakes": 0,
-          "word": "every",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098211,
-          "translation": "упасть",
-          "mistakes": 0,
-          "word": "fall",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098213,
-          "translation": "билет",
-          "mistakes": 0,
-          "word": "ticket",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098214,
-          "translation": "школа",
-          "mistakes": 0,
-          "word": "school",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098217,
-          "translation": "брат",
-          "mistakes": 0,
-          "word": "brother",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098220,
-          "translation": "оставить",
-          "mistakes": 0,
-          "word": "leave",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098223,
-          "translation": "маленький, -ая",
-          "mistakes": 0,
-          "word": "small",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098225,
-          "translation": "одежда",
-          "mistakes": 0,
-          "word": "clothes",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098228,
-          "translation": "усталый, -ая",
-          "mistakes": 0,
-          "word": "tired",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098231,
-          "translation": "улица",
-          "mistakes": 0,
-          "word": "street",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098235,
-          "translation": "принести",
-          "mistakes": 0,
-          "word": "fetch (bring)",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098238,
-          "translation": "солнце",
-          "mistakes": 0,
-          "word": "sun",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098241,
-          "translation": "точно",
-          "mistakes": 0,
-          "word": "exactly",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098247,
-          "translation": "когда; когда?",
-          "mistakes": 0,
-          "word": "when; when?",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098249,
-          "translation": "новый, -ая",
-          "mistakes": 0,
-          "word": "new",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098252,
-          "translation": "полный, -ая",
-          "mistakes": 0,
-          "word": "full",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424098254,
-          "translation": "слушать",
-          "mistakes": 0,
-          "word": "listen (to)",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175141,
-          "translation": "никогда",
-          "mistakes": 0,
-          "word": "never",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175145,
-          "translation": "здесь",
-          "mistakes": 0,
-          "word": "here",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175147,
-          "translation": "вода",
-          "mistakes": 0,
-          "word": "water",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175153,
-          "translation": "позволить",
-          "mistakes": 0,
-          "word": "let",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175157,
-          "translation": "одинокий, -ая",
-          "mistakes": 0,
-          "word": "alone",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175160,
-          "translation": "петь",
-          "mistakes": 0,
-          "word": "sing",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175166,
-          "translation": "сильный, -ая",
-          "mistakes": 0,
-          "word": "strong",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175170,
-          "translation": "учитель",
-          "mistakes": 0,
-          "word": "teacher",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175173,
-          "translation": "изменить",
-          "mistakes": 0,
-          "word": "change",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175177,
-          "translation": "сухой, -ая",
-          "mistakes": 0,
-          "word": "dry",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175180,
-          "translation": "мальчик",
-          "mistakes": 0,
-          "word": "boy",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175194,
-          "translation": "великий, -ая",
-          "mistakes": 0,
-          "word": "great",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175201,
-          "translation": "дочь",
-          "mistakes": 0,
-          "word": "daughter",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175203,
-          "translation": "обычно",
-          "mistakes": 0,
-          "word": "usually",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175205,
-          "translation": "любить",
-          "mistakes": 0,
-          "word": "love",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175207,
-          "translation": "семья",
-          "mistakes": 0,
-          "word": "family",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175209,
-          "translation": "спросить",
-          "mistakes": 0,
-          "word": "ask",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175211,
-          "translation": "закрыть",
-          "mistakes": 0,
-          "word": "shut (close)",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175218,
-          "translation": "употребить",
-          "mistakes": 0,
-          "word": "use",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175224,
-          "translation": "от",
-          "mistakes": 0,
-          "word": "from",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175228,
-          "translation": "бы",
-          "mistakes": 0,
-          "word": "would",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175233,
-          "translation": "следующий, -ая",
-          "mistakes": 0,
-          "word": "next",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175238,
-          "translation": "жить (проживать)",
-          "mistakes": 0,
-          "word": "live",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175250,
-          "translation": "до (вплоть до)",
-          "mistakes": 0,
-          "word": "until",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175252,
-          "translation": "сегодня",
-          "mistakes": 0,
-          "word": "today",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175254,
-          "translation": "больше",
-          "mistakes": 0,
-          "word": "more",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175261,
-          "translation": "сорт",
-          "mistakes": 0,
-          "word": "sort",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175271,
-          "translation": "карандаш",
-          "mistakes": 0,
-          "word": "pencil",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175322,
-          "translation": "около (примерно)",
-          "mistakes": 0,
-          "word": "about",
+          "last_asked_time": 1424870091, 
+          "translation": "привлекательный, заманчивый, соблазнительный", 
+          "mistakes": 0, 
+          "word": "attractive", 
           "asked": 1
-        },
+        }, 
         {
-          "last_asked_time": 1424175327,
-          "translation": "теплый, -ая",
-          "mistakes": 0,
-          "word": "warm",
+          "last_asked_time": 1424870098, 
+          "translation": "печально известный", 
+          "mistakes": 0, 
+          "word": "notoriously", 
           "asked": 1
-        },
+        }, 
         {
-          "last_asked_time": 1424175330,
-          "translation": "везде",
-          "mistakes": 0,
-          "word": "everywhere",
+          "last_asked_time": 1424870103, 
+          "translation": "тем временем, между тем, пока", 
+          "mistakes": 0, 
+          "word": "meanwhile", 
           "asked": 1
-        },
+        }, 
         {
-          "last_asked_time": 1424175332,
-          "translation": "искать",
-          "mistakes": 0,
-          "word": "look (for)",
+          "last_asked_time": 1424870113, 
+          "translation": "предшествующий; до; преимущественный, первоочередной", 
+          "mistakes": 0, 
+          "word": "prior", 
           "asked": 1
-        },
-        {
-          "last_asked_time": 1424175335,
-          "translation": "держать",
-          "mistakes": 0,
-          "word": "hold",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175338,
-          "translation": "рад, -а",
-          "mistakes": 0,
-          "word": "glad",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175341,
-          "translation": "должен, должна",
-          "mistakes": 0,
-          "word": "must",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175343,
-          "translation": "слово",
-          "mistakes": 0,
-          "word": "word",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175345,
-          "translation": "комната",
-          "mistakes": 0,
-          "word": "room",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175347,
-          "translation": "час",
-          "mistakes": 0,
-          "word": "hour",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175353,
-          "translation": "этот, эта,",
-          "mistakes": 0,
-          "word": "this",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175355,
-          "translation": "машина",
-          "mistakes": 0,
-          "word": "car",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175357,
-          "translation": "работать",
-          "mistakes": 0,
-          "word": "work",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175360,
-          "translation": "мочь (например, физически)",
-          "mistakes": 0,
-          "word": "can",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175364,
-          "translation": "изучить",
-          "mistakes": 0,
-          "word": "learn",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175368,
-          "translation": "встретить",
-          "mistakes": 0,
-          "word": "meet",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175371,
-          "translation": "прибыть",
-          "mistakes": 0,
-          "word": "arrive",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175374,
-          "translation": "прекрасный, -ая",
-          "mistakes": 0,
-          "word": "beautiful",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175377,
-          "translation": "сердце",
-          "mistakes": 0,
-          "word": "heart",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175380,
-          "translation": "дать",
-          "mistakes": 0,
-          "word": "give",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175396,
-          "translation": "высокий, -ая (что-либо)",
-          "mistakes": 0,
-          "word": "high",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 1424175401,
-          "translation": "лечь",
-          "mistakes": 0,
-          "word": "lie down; go to bed",
-          "asked": 1
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "согласно",
-          "mistakes": 0,
-          "word": "according to",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "что-нибудь",
-          "mistakes": 0,
-          "word": "something",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хотеть",
-          "mistakes": 0,
-          "word": "want",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "внизу",
-          "mistakes": 0,
-          "word": "at the bottom",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "путешествовать",
-          "mistakes": 0,
-          "word": "travel",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вред",
-          "mistakes": 0,
-          "word": "damage",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "писать",
-          "mistakes": 0,
-          "word": "write",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "как",
-          "mistakes": 0,
-          "word": "how",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "жаркий, -ая",
-          "mistakes": 0,
-          "word": "hot",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ответить",
-          "mistakes": 0,
-          "word": "answer",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сколько? (можно сосчитать)",
-          "mistakes": 0,
-          "word": "how many?",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(наихудший, -ая)",
-          "mistakes": 0,
-          "word": "(worst)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ждать",
-          "mistakes": 0,
-          "word": "wait (for)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мочь (например, иметь разрешение)",
-          "mistakes": 0,
-          "word": "may",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "часы",
-          "mistakes": 0,
-          "word": "watch",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "после",
-          "mistakes": 0,
-          "word": "after",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "неверный, -ая",
-          "mistakes": 0,
-          "word": "wrong",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "такой, -ая",
-          "mistakes": 0,
-          "word": "such",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мужчина",
-          "mistakes": 0,
-          "word": "man",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(я –) дома",
-          "mistakes": 0,
-          "word": "(I am) at home",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "доволен, довольна",
-          "mistakes": 0,
-          "word": "satisfied (with); pleased",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вспомнить",
-          "mistakes": 0,
-          "word": "remember",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "свет",
-          "mistakes": 0,
-          "word": "light",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "так",
-          "mistakes": 0,
-          "word": "so",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "предложить",
-          "mistakes": 0,
-          "word": "suggest",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "высокий, -ая (кто-либо)",
-          "mistakes": 0,
-          "word": "tall",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "помочь",
-          "mistakes": 0,
-          "word": "help",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "над",
-          "mistakes": 0,
-          "word": "over",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "скоро",
-          "mistakes": 0,
-          "word": "soon",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "бумага",
-          "mistakes": 0,
-          "word": "paper",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сквозь",
-          "mistakes": 0,
-          "word": "through",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "город",
-          "mistakes": 0,
-          "word": "city (town)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "холодный, -ая",
-          "mistakes": 0,
-          "word": "cold",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "еще",
-          "mistakes": 0,
-          "word": "still",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "до (перед)",
-          "mistakes": 0,
-          "word": "before",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "также",
-          "mistakes": 0,
-          "word": "too; also",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "интересный, -ая",
-          "mistakes": 0,
-          "word": "interesting",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "лучше",
-          "mistakes": 0,
-          "word": "better",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "тогда",
-          "mistakes": 0,
-          "word": "then",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вечер",
-          "mistakes": 0,
-          "word": "evening",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "кто-нибудь",
-          "mistakes": 0,
-          "word": "somebody",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "еда",
-          "mistakes": 0,
-          "word": "food",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "безопасный, -ая",
-          "mistakes": 0,
-          "word": "safe",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "нога",
-          "mistakes": 0,
-          "word": "foot",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "теперь",
-          "mistakes": 0,
-          "word": "now",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "день",
-          "mistakes": 0,
-          "word": "day",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хлеб",
-          "mistakes": 0,
-          "word": "bread",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "имя",
-          "mistakes": 0,
-          "word": "name",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "смеяться (над)",
-          "mistakes": 0,
-          "word": "laugh (at)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "всегда",
-          "mistakes": 0,
-          "word": "always",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "уронить",
-          "mistakes": 0,
-          "word": "drop",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "веселиться",
-          "mistakes": 0,
-          "word": "have fun",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сторона",
-          "mistakes": 0,
-          "word": "side",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "значить",
-          "mistakes": 0,
-          "word": "mean",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "тяжелый, -ая",
-          "mistakes": 0,
-          "word": "heavy",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "выше (по лестнице)",
-          "mistakes": 0,
-          "word": "upstairs",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дом (строение)",
-          "mistakes": 0,
-          "word": "house",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "твердый, -ая",
-          "mistakes": 0,
-          "word": "hard",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "кончить",
-          "mistakes": 0,
-          "word": "finish",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "год",
-          "mistakes": 0,
-          "word": "year",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "девочка",
-          "mistakes": 0,
-          "word": "girl",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "наружу",
-          "mistakes": 0,
-          "word": "out",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "пробовать",
-          "mistakes": 0,
-          "word": "try",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "обеспокоен (из-за)",
-          "mistakes": 0,
-          "word": "worried (about)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сюрприз",
-          "mistakes": 0,
-          "word": "surprise",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "одолжить (у кого-либо)",
-          "mistakes": 0,
-          "word": "borrow (from)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "свободный, -ая",
-          "mistakes": 0,
-          "word": "free",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "совершенно",
-          "mistakes": 0,
-          "word": "completely",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "положить",
-          "mistakes": 0,
-          "word": "put",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "обучить",
-          "mistakes": 0,
-          "word": "teach",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "все",
-          "mistakes": 0,
-          "word": "all; everybody",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "язык",
-          "mistakes": 0,
-          "word": "language",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(Дорогая Мария)",
-          "mistakes": 0,
-          "word": "(Dear Maria)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ужасный, -ая",
-          "mistakes": 0,
-          "word": "terrible",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хранить",
-          "mistakes": 0,
-          "word": "keep",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вещь",
-          "mistakes": 0,
-          "word": "thing",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "место",
-          "mistakes": 0,
-          "word": "place",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сначала",
-          "mistakes": 0,
-          "word": "first",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "уже",
-          "mistakes": 0,
-          "word": "already",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "чувствовать",
-          "mistakes": 0,
-          "word": "feel",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "который, -ая",
-          "mistakes": 0,
-          "word": "who (кто-либо); which (что-либо)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мыть",
-          "mistakes": 0,
-          "word": "wash",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "быстрый, -ая",
-          "mistakes": 0,
-          "word": "fast",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "невозможный, -ая",
-          "mistakes": 0,
-          "word": "impossible",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "открыть",
-          "mistakes": 0,
-          "word": "open",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "завтра",
-          "mistakes": 0,
-          "word": "tomorrow",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "чудесный",
-          "mistakes": 0,
-          "word": "wonderful",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "слишком",
-          "mistakes": 0,
-          "word": "too",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "смотреть (на)",
-          "mistakes": 0,
-          "word": "look (at)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "друг (подруга)",
-          "mistakes": 0,
-          "word": "friend",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "что",
-          "mistakes": 0,
-          "word": "that",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "никто",
-          "mistakes": 0,
-          "word": "nobody",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "боюсь, что",
-          "mistakes": 0,
-          "word": "I'm afraid that",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "короткий, -ая",
-          "mistakes": 0,
-          "word": "short",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "так как (потому что)",
-          "mistakes": 0,
-          "word": "because",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "немного",
-          "mistakes": 0,
-          "word": "a little",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "верить",
-          "mistakes": 0,
-          "word": "believe",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "чем",
-          "mistakes": 0,
-          "word": "than",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "добрый, -ая",
-          "mistakes": 0,
-          "word": "kind",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "к сожалению",
-          "mistakes": 0,
-          "word": "unfortunately",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "скучный, -ая",
-          "mistakes": 0,
-          "word": "boring",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "и",
-          "mistakes": 0,
-          "word": "and",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "печальный, -ая",
-          "mistakes": 0,
-          "word": "sad",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сказать",
-          "mistakes": 0,
-          "word": "say",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "иметь",
-          "mistakes": 0,
-          "word": "have",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "нуждаться",
-          "mistakes": 0,
-          "word": "need",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "продать",
-          "mistakes": 0,
-          "word": "sell",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "лежать",
-          "mistakes": 0,
-          "word": "lie",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "болит",
-          "mistakes": 0,
-          "word": "it hurts",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "начать",
-          "mistakes": 0,
-          "word": "begin",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "по направлению к",
-          "mistakes": 0,
-          "word": "towards",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "боль",
-          "mistakes": 0,
-          "word": "pain",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "цена",
-          "mistakes": 0,
-          "word": "price",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "рот",
-          "mistakes": 0,
-          "word": "mouth",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "письмо",
-          "mistakes": 0,
-          "word": "letter",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ничего",
-          "mistakes": 0,
-          "word": "nothing",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "особенно",
-          "mistakes": 0,
-          "word": "especially",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ясный, -ая",
-          "mistakes": 0,
-          "word": "clear",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "иногда",
-          "mistakes": 0,
-          "word": "sometimes",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "голодный, -ая",
-          "mistakes": 0,
-          "word": "hungry",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "женат (на) / замужем (за)",
-          "mistakes": 0,
-          "word": "married (to)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "часть",
-          "mistakes": 0,
-          "word": "part",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "чистый, -ая",
-          "mistakes": 0,
-          "word": "clean",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "магазин",
-          "mistakes": 0,
-          "word": "shop",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "показать",
-          "mistakes": 0,
-          "word": "show",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дешевый, -ая",
-          "mistakes": 0,
-          "word": "cheap",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "привезти",
-          "mistakes": 0,
-          "word": "bring",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "земля",
-          "mistakes": 0,
-          "word": "earth",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "найти",
-          "mistakes": 0,
-          "word": "find",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "почва",
-          "mistakes": 0,
-          "word": "ground",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "медленный, -ая",
-          "mistakes": 0,
-          "word": "slow",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "верный, -ая",
-          "mistakes": 0,
-          "word": "true",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "достаточно",
-          "mistakes": 0,
-          "word": "enough",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "следовало бы",
-          "mistakes": 0,
-          "word": "should",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "минута (Одну минуту!)",
-          "mistakes": 0,
-          "word": "minute (Just a moment!)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "только",
-          "mistakes": 0,
-          "word": "only",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "надеяться",
-          "mistakes": 0,
-          "word": "hope",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "делать",
-          "mistakes": 0,
-          "word": "do",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "получить",
-          "mistakes": 0,
-          "word": "get",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "остановиться",
-          "mistakes": 0,
-          "word": "stop",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "известный, -ая",
-          "mistakes": 0,
-          "word": "famous",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "во время",
-          "mistakes": 0,
-          "word": "during",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "по меньшей мере",
-          "mistakes": 0,
-          "word": "at least",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "плакать",
-          "mistakes": 0,
-          "word": "cry",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "утро",
-          "mistakes": 0,
-          "word": "morning",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сумка",
-          "mistakes": 0,
-          "word": "bag",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "плохой, -ая",
-          "mistakes": 0,
-          "word": "bad",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "глупый, -ая",
-          "mistakes": 0,
-          "word": "stupid",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "муж",
-          "mistakes": 0,
-          "word": "husband",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "думать (о)",
-          "mistakes": 0,
-          "word": "think (about)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "родственник, -ица",
-          "mistakes": 0,
-          "word": "relative",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "кусок",
-          "mistakes": 0,
-          "word": "piece, bit",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "видеть",
-          "mistakes": 0,
-          "word": "see",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "лучше всего; лучший, -ая",
-          "mistakes": 0,
-          "word": "best",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "за (сзади)",
-          "mistakes": 0,
-          "word": "behind",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "между",
-          "mistakes": 0,
-          "word": "between",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вероятно",
-          "mistakes": 0,
-          "word": "probably",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "удивлен, -а",
-          "mistakes": 0,
-          "word": "surprised (at)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "бояться",
-          "mistakes": 0,
-          "word": "afraid (of)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ключ",
-          "mistakes": 0,
-          "word": "key",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "новости",
-          "mistakes": 0,
-          "word": "news",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "прийти",
-          "mistakes": 0,
-          "word": "come",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "оба, -е",
-          "mistakes": 0,
-          "word": "both",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "несчастный случай",
-          "mistakes": 0,
-          "word": "accident",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "последний, -ая",
-          "mistakes": 0,
-          "word": "last",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "много (можно сосчитать)",
-          "mistakes": 0,
-          "word": "many",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "больной, -ая",
-          "mistakes": 0,
-          "word": "ill",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "налог (НДС)",
-          "mistakes": 0,
-          "word": "tax (VAT)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "против",
-          "mistakes": 0,
-          "word": "against",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "иностранный, -ая",
-          "mistakes": 0,
-          "word": "foreign",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "целый, -ая",
-          "mistakes": 0,
-          "word": "whole",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "иначе",
-          "mistakes": 0,
-          "word": "otherwise",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дорогой, -ая (по цене)",
-          "mistakes": 0,
-          "word": "expensive",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "поздний, -ая",
-          "mistakes": 0,
-          "word": "late",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "какой(-ая)-нибудь",
-          "mistakes": 0,
-          "word": "any, some",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "быстро",
-          "mistakes": 0,
-          "word": "quickly",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "много (нельзя сосчитать)",
-          "mistakes": 0,
-          "word": "much",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "пустой, -ая",
-          "mistakes": 0,
-          "word": "empty",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "жизнь",
-          "mistakes": 0,
-          "word": "life",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "с тех пор",
-          "mistakes": 0,
-          "word": "since that time",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "понять",
-          "mistakes": 0,
-          "word": "understand",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "обычный, -ая",
-          "mistakes": 0,
-          "word": "common, usual",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ребенок",
-          "mistakes": 0,
-          "word": "child",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "те",
-          "mistakes": 0,
-          "word": "those",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "весь, вся",
-          "mistakes": 0,
-          "word": "all the",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "звук",
-          "mistakes": 0,
-          "word": "sound",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "кто?",
-          "mistakes": 0,
-          "word": "who?",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "эти",
-          "mistakes": 0,
-          "word": "these",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "из-за",
-          "mistakes": 0,
-          "word": "because of",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "воздух",
-          "mistakes": 0,
-          "word": "air",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "буду",
-          "mistakes": 0,
-          "word": "will",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(близко)",
-          "mistakes": 0,
-          "word": "near",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "страна",
-          "mistakes": 0,
-          "word": "country",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "газета",
-          "mistakes": 0,
-          "word": "newspaper",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "голос",
-          "mistakes": 0,
-          "word": "voice",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ошибка",
-          "mistakes": 0,
-          "word": "mistake",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "почти",
-          "mistakes": 0,
-          "word": "almost",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "причина",
-          "mistakes": 0,
-          "word": "reason (for)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "где?",
-          "mistakes": 0,
-          "word": "where?",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хороший, -ая",
-          "mistakes": 0,
-          "word": "good",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "в (внутри)",
-          "mistakes": 0,
-          "word": "in",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "готов, -а",
-          "mistakes": 0,
-          "word": "ready",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "если",
-          "mistakes": 0,
-          "word": "if",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "смешной, -ая",
-          "mistakes": 0,
-          "word": "funny",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "различный, -ая",
-          "mistakes": 0,
-          "word": "different",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "верх (сверху)",
-          "mistakes": 0,
-          "word": "top (on the top of)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "счастливый, -ая",
-          "mistakes": 0,
-          "word": "happy, glad",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "возможно",
-          "mistakes": 0,
-          "word": "perhaps",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "платить",
-          "mistakes": 0,
-          "word": "pay",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "идти",
-          "mistakes": 0,
-          "word": "go; walk",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "тот же самый (та же самая)",
-          "mistakes": 0,
-          "word": "same",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "странный, -ая",
-          "mistakes": 0,
-          "word": "strange",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "несколько",
-          "mistakes": 0,
-          "word": "several",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "трудный, -ая",
-          "mistakes": 0,
-          "word": "difficult",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "неделя",
-          "mistakes": 0,
-          "word": "week",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "спокойный, -ая",
-          "mistakes": 0,
-          "word": "calm; quiet",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "пить",
-          "mistakes": 0,
-          "word": "drink",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вчера",
-          "mistakes": 0,
-          "word": "yesterday",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "рука",
-          "mistakes": 0,
-          "word": "hand",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "цвет",
-          "mistakes": 0,
-          "word": "colour",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(слева)",
-          "mistakes": 0,
-          "word": "(on the left)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хорошо",
-          "mistakes": 0,
-          "word": "well",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "человек",
-          "mistakes": 0,
-          "word": "person",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "без",
-          "mistakes": 0,
-          "word": "without",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мать",
-          "mistakes": 0,
-          "word": "mother",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "левый, -ая",
-          "mistakes": 0,
-          "word": "left",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "охотно",
-          "mistakes": 0,
-          "word": "with pleasure",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "только что",
-          "mistakes": 0,
-          "word": "just",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "деньги",
-          "mistakes": 0,
-          "word": "money",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "не",
-          "mistakes": 0,
-          "word": "not",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мир (земля)",
-          "mistakes": 0,
-          "word": "world",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "да",
-          "mistakes": 0,
-          "word": "yes",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "пока нет",
-          "mistakes": 0,
-          "word": "not yet",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(утром)",
-          "mistakes": 0,
-          "word": "(in the morning)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "кроме",
-          "mistakes": 0,
-          "word": "except",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "другой, -ая",
-          "mistakes": 0,
-          "word": "other",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "легкий, -ая (нетрудный)",
-          "mistakes": 0,
-          "word": "easy",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "шутить",
-          "mistakes": 0,
-          "word": "joke",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "взять",
-          "mistakes": 0,
-          "word": "take",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "читать",
-          "mistakes": 0,
-          "word": "read",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "большой, -ая",
-          "mistakes": 0,
-          "word": "big",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "квартира",
-          "mistakes": 0,
-          "word": "flat (Англия), apartment (США)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "возможный, -ая",
-          "mistakes": 0,
-          "word": "possible",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ранний, -ая",
-          "mistakes": 0,
-          "word": "early",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "знать",
-          "mistakes": 0,
-          "word": "know",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "немедленно",
-          "mistakes": 0,
-          "word": "immediately",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дама",
-          "mistakes": 0,
-          "word": "lady",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "необходимый, -ая",
-          "mistakes": 0,
-          "word": "necessary",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "нравиться",
-          "mistakes": 0,
-          "word": "like",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "собрать",
-          "mistakes": 0,
-          "word": "collect",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сердитый, -ая (на)",
-          "mistakes": 0,
-          "word": "angry (at)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ночь",
-          "mistakes": 0,
-          "word": "night",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "стать",
-          "mistakes": 0,
-          "word": "become",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "страница",
-          "mistakes": 0,
-          "word": "page",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "правый, -ая",
-          "mistakes": 0,
-          "word": "right",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "старый, -ая",
-          "mistakes": 0,
-          "word": "old",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "часто",
-          "mistakes": 0,
-          "word": "often",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "народ",
-          "mistakes": 0,
-          "word": "people",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "играть",
-          "mistakes": 0,
-          "word": "play",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "мертвый, -ая",
-          "mistakes": 0,
-          "word": "dead",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "срочный, -ая",
-          "mistakes": 0,
-          "word": "urgent",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "говорить",
-          "mistakes": 0,
-          "word": "speak (talk)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дорогой, -ая",
-          "mistakes": 0,
-          "word": "dear",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дом (жилище); домой",
-          "mistakes": 0,
-          "word": "home",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "постепенно",
-          "mistakes": 0,
-          "word": "gradually",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "для",
-          "mistakes": 0,
-          "word": "for",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "всё",
-          "mistakes": 0,
-          "word": "everything",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "ручка",
-          "mistakes": 0,
-          "word": "pen",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "продолжить",
-          "mistakes": 0,
-          "word": "continue",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "быть",
-          "mistakes": 0,
-          "word": "be",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "шум",
-          "mistakes": 0,
-          "word": "noise",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "терять",
-          "mistakes": 0,
-          "word": "lose",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "довольно (вполне)",
-          "mistakes": 0,
-          "word": "quite; fairly",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "хотя",
-          "mistakes": 0,
-          "word": "although",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "глаз",
-          "mistakes": 0,
-          "word": "eye",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "перед (домом)",
-          "mistakes": 0,
-          "word": "in front of (the house)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "на",
-          "mistakes": 0,
-          "word": "on",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сестра",
-          "mistakes": 0,
-          "word": "sister",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "путешествие",
-          "mistakes": 0,
-          "word": "journey",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "стоять",
-          "mistakes": 0,
-          "word": "stand",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "назад (дня назад)",
-          "mistakes": 0,
-          "word": "ago (days ago)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "или",
-          "mistakes": 0,
-          "word": "or",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "дорога",
-          "mistakes": 0,
-          "word": "road",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "в (внутрь)",
-          "mistakes": 0,
-          "word": "into",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "сын",
-          "mistakes": 0,
-          "word": "son",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вниз",
-          "mistakes": 0,
-          "word": "down",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "погода",
-          "mistakes": 0,
-          "word": "weather",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "обещать",
-          "mistakes": 0,
-          "word": "promise",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "почему?",
-          "mistakes": 0,
-          "word": "why?",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "там",
-          "mistakes": 0,
-          "word": "there",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "вопрос",
-          "mistakes": 0,
-          "word": "question",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "длинный,-ая",
-          "mistakes": 0,
-          "word": "long",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "низкий, -ая",
-          "mistakes": 0,
-          "word": "low",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "способ",
-          "mistakes": 0,
-          "word": "way",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "одолжить (кому-либо)",
-          "mistakes": 0,
-          "word": "lend (to)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "переводить",
-          "mistakes": 0,
-          "word": "translate",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "голова",
-          "mistakes": 0,
-          "word": "head",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "купить",
-          "mistakes": 0,
-          "word": "buy",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "что?",
-          "mistakes": 0,
-          "word": "what?",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "но",
-          "mistakes": 0,
-          "word": "but",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "слышать",
-          "mistakes": 0,
-          "word": "hear",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "конечно",
-          "mistakes": 0,
-          "word": "of course",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "с",
-          "mistakes": 0,
-          "word": "with",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "есть (кушать)",
-          "mistakes": 0,
-          "word": "eat",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "опасный, -ая",
-          "mistakes": 0,
-          "word": "dangerous",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "наверху",
-          "mistakes": 0,
-          "word": "up",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "грязный, -ая",
-          "mistakes": 0,
-          "word": "dirty",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "чемодан",
-          "mistakes": 0,
-          "word": "suitcase",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(справа)",
-          "mistakes": 0,
-          "word": "(on the right)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "уверен, -а",
-          "mistakes": 0,
-          "word": "certain",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "так как (поскольку)",
-          "mistakes": 0,
-          "word": "as",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "у",
-          "mistakes": 0,
-          "word": "at",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "проверить",
-          "mistakes": 0,
-          "word": "check",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "опять",
-          "mistakes": 0,
-          "word": "again",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "нет",
-          "mistakes": 0,
-          "word": "no",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "(я хочу видеть; я хочу книгу)",
-          "mistakes": 0,
-          "word": "(I want to see; I want a book)",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "книга",
-          "mistakes": 0,
-          "word": "book",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "приятный, -ая",
-          "mistakes": 0,
-          "word": "nice",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "картина",
-          "mistakes": 0,
-          "word": "picture",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "остаться",
-          "mistakes": 0,
-          "word": "stay",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "важный, -ая",
-          "mistakes": 0,
-          "word": "important",
-          "asked": 0
-        },
-        {
-          "last_asked_time": 0,
-          "translation": "жена",
-          "mistakes": 0,
-          "word": "wife",
-          "asked": 0
-        },
+        }, 
         {
-          "last_asked_time": 0,
-          "translation": "привык, -ла (к хорошей еде / к полетам)",
-          "mistakes": 0,
-          "word": "used to (good food / flying)",
+          "last_asked_time": 0, 
+          "translation": "недосмотр, оплошность, упущение; контроль, надзор, присмотр; наблюдение", 
+          "mistakes": 0, 
+          "word": "oversight", 
           "asked": 0
-        },
+        }, 
         {
-          "last_asked_time": 0,
-          "translation": "раз",
-          "mistakes": 0,
-          "word": "time",
+          "last_asked_time": 0, 
+          "translation": "(глаг) сдвигать, компенсировать, возмещать; (сущ) компенсация, вознаграждение; (прил) смещённый, отклонённый", 
+          "mistakes": 0, 
+          "word": "offset", 
           "asked": 0
-        },
+        }, 
         {
-          "last_asked_time": 0,
-          "translation": "однажды",
-          "mistakes": 0,
-          "word": "once",
+          "last_asked_time": 0, 
+          "translation": "достигать, доводить до конца, завершать, совершать", 
+          "mistakes": 0, 
+          "word": "accomplish", 
           "asked": 0
         }
-      ],
+      ], 
       "performed_tests": 0
     }
   ]
