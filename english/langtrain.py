@@ -45,6 +45,8 @@ init_Word = {
     'translation': '',
     'asked': 0,
     'mistakes': 0,
+    'user_know': 0,             # столько раз пользователь сказал "знаю, повторять реже"
+    'user_dunno': 0,            # столько раз юзер сказал "не знаю, повторять чаще"
     'last_asked_time': 0        # последний абсолютный номер выполненного теста (см. ниже performed_tests)
 }
 
@@ -206,7 +208,9 @@ class User:
 
 #-----------------------------------------------------------------------------------------------------------------------
 class Learner:
+    # progress in seconds
     progress = [
+        0,
         15,
         60,
         3 * 60,
@@ -222,13 +226,17 @@ class Learner:
     def __init__(self, udict):
         self.d = udict
 
-    def learn(self):
+    #---------------------------------------------------------------------------
+    def learn(self, output_encoding='utf8'):
         '''
         TODO:
         1. для конкретного варианта перевода предлагать список слов не случайных, а максимально похожих друг на друга
            по написанию - отбирать по дистанции левинштейна;
            для этого, возможно, сохранять отдельно таблицу схожести слов, чтобы не рассчитывать эти дистации каждый раз.
         2. рандомно выбирать направление перевода - от инглиша к русскому или наоборот.
+        3. после последнего задания сделать паузу.
+        4. в визуальной проге сделать кнопку "Повторять это слово чаще" - для этого к слову завести дополнительную переменную,
+           которая будет суммироваться в 'mistakes' - она будет инкрементиться при нажатии на эту кнопку.
         '''
 
         if len(self.d['words']) == 0:
@@ -236,79 +244,40 @@ class Learner:
 
         test = 0
         kTestsToPerform = 50
-        variants_num = 5
+        kVariantsNum = 5
         while test < kTestsToPerform:
             test += 1
 
-            # выбираем слово для теста
-            rand_widx = random.randint(0, len(self.d['words'])-1)
-            selected_word = self.d['words'][ rand_widx ]
-            level = selected_word['asked'] / (selected_word['mistakes'] + 1)
-            level = min(level, len(self.progress)-1)
-            selected_word_period = self.progress[level] + 1
-
-            for w in self.d['words']:
-                # рассчитываем, на какой стадии находится юзер по данному слову
-                level = w['asked'] / (w['mistakes'] + 1)
-                level = min(level, len(self.progress)-1)
-
-                # берём период, через который нужно повторить данное слово
-                word_period = self.progress[level]
-
-                # DEBUG
-                #left_word_period = int(time.time()) - w['last_asked_time']
-                #print >> sys.stderr, "'%s': asked=%d, mistakes=%d, level=%d, word_period=%d, selected_word_period=%d, left_word_period=%d" % \
-                #                     (w['word'], w['asked'], w['mistakes'], level, word_period, selected_word_period, left_word_period)
-                # DEBUG
-
-                # если ранее найдено ближайшее по времени слово, это пропускаем
-                #if selected_word_period <= word_period:
-                #    continue
-                # не настало ли время для этого слова?
-                left_word_period = int(time.time()) - w['last_asked_time']
-                if left_word_period >= word_period:
-                    selected_word = w
-                    selected_word_period = word_period
-                    break
-
-            # ask
-            # - генерим варианты ответов
-            variants = random.sample( self.d['words'], variants_num )
-            variants = [x['word'] for x in variants]
-
-            ans = selected_word['word']
-
-            already_here = False
-            ans_idx = 0
-            for i in xrange(0, len(variants)):  # а нет ли среди сэмпла того, что мы выбрали
-                if variants[i] == ans:
-                    already_here = True
-                    ans_idx = i
-                    break
-
-            if not already_here:
-                ans_idx = random.randint(0, variants_num-1)
-                variants[ans_idx] = ans
+            trans_to_word = (random.randint(0, 1) == 0)
+            (selected_word, task_text, variants, ans_idx) = self._generate_task(kVariantsNum, trans_to_word)
 
             # - спрашиваем
             print
             print "Test %d / %d. Translate:" % (test, kTestsToPerform)
             print
-            print "   %s" % selected_word['translation'].encode('cp866')
+            print "   %s" % task_text.encode(output_encoding)
             print
             for i in xrange(len(variants)):
-                print "%d. %s" % (i+1, variants[i].encode('cp1251'))
+                print "%d. %s" % (i+1, variants[i].encode(output_encoding))
 
             while True:
                 try:
-                    user_ans_idx = int(raw_input('Enter number of answer (0-exit): '))
+                    user_ans_idx = int(raw_input("Enter number of answer (0-exit; 8-I know, ask less often; 9-Don't know, ask more often): "))
                 except:
                     print "Bad number, try again"
                     continue
                 if user_ans_idx == 0:
                     print "Exiting."
                     sys.exit(0)
-                if user_ans_idx < 1 or user_ans_idx > variants_num:
+                if user_ans_idx == 8:
+                    print "OK, will ask this word less often"
+                    selected_word['user_know'] += 2
+                    continue
+                if user_ans_idx == 9:
+                    print "OK, will ask this word more often"
+                    selected_word['user_dunno'] += 2
+                    continue
+                if user_ans_idx < 1 or user_ans_idx > kVariantsNum:
                     print "Bad number, try again"
                     continue
                 break
@@ -327,6 +296,64 @@ class Learner:
 
         print
         print "That's good. All tests have done!"
+
+    #---------------------------------------------------------------------------
+    # return: ( selected_word, task_text, [ans_varians_texts], right_variant_index )
+    def _generate_task(self, variants_num, trans_to_word=True):
+        # выбираем слово для теста
+        rand_widx = random.randint(0, len(self.d['words'])-1)
+        (selected_word, selected_word_period) = self._get_word_and_period(rand_widx)
+
+        for idx in xrange(len(self.d['words'])):
+            (word, word_period) = self._get_word_and_period(idx)
+
+            # не настало ли время для этого слова?
+            # DEBUG
+            #print >> sys.stderr, "'%s': asked=%d, mistakes=%d, level=%d, word_period=%d, selected_word_period=%d, left_word_period=%d" % \
+            #                     (word['word'], word['asked'], word['mistakes'], level, word_period, selected_word_period, left_word_period)
+            # DEBUG
+            left_word_period = int(time.time()) - word['last_asked_time']
+            if left_word_period >= word_period:
+                selected_word = word
+                selected_word_period = word_period
+                break
+
+        # выбираем направление перевода
+        kTextFrom = 'word'
+        kTextTo   = 'translation'
+        if trans_to_word:
+            kTextFrom = 'translation'
+            kTextTo   = 'word'
+
+        # генерим варианты ответов
+        variants = random.sample( self.d['words'], variants_num )
+        variants = [x[kTextTo] for x in variants]
+
+        ans = selected_word[kTextTo]
+
+        already_here = False
+        ans_idx = 0
+        for i in xrange(0, len(variants)):  # а нет ли среди сэмпла того, что мы выбрали
+            if variants[i] == ans:
+                already_here = True
+                ans_idx = i
+                break
+
+        if not already_here:
+            ans_idx = random.randint(0, variants_num-1)
+            variants[ans_idx] = ans
+
+        return (selected_word, selected_word[kTextFrom], variants, ans_idx)
+
+    #---------------------------------------------------------------------------
+    # return: ( word, period )
+    def _get_word_and_period(self, idx):
+        w = self.d['words'][ idx ]
+        level = (w['asked'] + w['user_know']) / (w['mistakes'] + w['user_dunno'] + 1)
+        level = min(level, len(self.progress)-1)
+        period = self.progress[level] + 1
+        return (w, period)
+
 
 #-----------------------------------------------------------------------------------------------------------------------
 def Usage():
@@ -368,7 +395,7 @@ def main():
 
     # обучаемся
     learner = Learner(user.u['dicts'][studying_dict])
-    learner.learn()
+    learner.learn('cp866')
 
     return 0
 
