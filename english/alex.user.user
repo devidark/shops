@@ -1,307 +1,306 @@
 {
   "studying_dict": 0, 
-  "name": "alex", 
+  "name": "alex.user", 
   "dicts": [
     {
-      "hash": "79847dffd35b8dcee0f3ea4ab9880275bd8c51ea", 
-      "file": "D:\\proger\\git\\english\\dict.csv", 
+      "hash": "4f8b5b9977246879867227855a13fdc71e5fb286", 
       "words": [
         {
           "word": "convenience", 
           "user_know": 0, 
-          "last_asked_time": 1425368109, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "удобство, комфорт", 
-          "asked": 8
+          "asked": 0
         }, 
         {
           "word": "subtly", 
-          "user_know": 4, 
-          "last_asked_time": 1425300751, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "тонко", 
-          "asked": 4
+          "asked": 0
         }, 
         {
           "word": "boilerplate", 
-          "user_know": 4, 
-          "last_asked_time": 1425286630, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "шаблон, стереотип, образец, газетный материал", 
-          "asked": 4
+          "asked": 0
         }, 
         {
           "word": "outline", 
           "user_know": 0, 
-          "last_asked_time": 1425368126, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "указывать, показывать, обрисовывать", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "adorn", 
-          "user_know": 2, 
-          "last_asked_time": 1425368128, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "украшать", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "in order to", 
-          "user_know": 2, 
-          "last_asked_time": 1425368130, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "для того чтобы", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "rather", 
           "user_know": 0, 
-          "last_asked_time": 1425368138, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "скорее, точнее, слегка, довольно-таки, пожалуй, наоборот, отнюдь, а не, вместо, в отличие от", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "yield", 
           "user_know": 0, 
-          "last_asked_time": 1425368142, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "выдавать результат, уступать, приносить плоды", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "go easy, friend!", 
-          "user_know": 2, 
-          "last_asked_time": 1425368147, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "осторожнее (тактичнее) друг!", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "facility", 
-          "user_know": 2, 
-          "last_asked_time": 1425368152, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "приспособление, объект, возможность, установка", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "tough", 
-          "user_know": 2, 
-          "last_asked_time": 1425368155, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "жёсткий, упругий, строгий, суровый", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "appreciate", 
           "user_know": 0, 
-          "last_asked_time": 1425368164, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "признавать, ценить, принимать во внимание", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "behind", 
-          "user_know": 2, 
-          "last_asked_time": 1425368167, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "за, позади, сзади", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "oblivious", 
           "user_know": 0, 
-          "last_asked_time": 1425368168, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "забывчивый, невнимательный", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "obvious", 
           "user_know": 0, 
-          "last_asked_time": 1425368170, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "явный, очевидный", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "intermittent", 
-          "user_know": 4, 
-          "last_asked_time": 1425368172, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "прерывистый, скачкообразный", 
-          "asked": 4
+          "asked": 0
         }, 
         {
           "word": "issue", 
-          "user_know": 2, 
-          "last_asked_time": 1425368177, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "проблема, задача, выпуск, издание", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "bounty", 
-          "user_know": 2, 
-          "last_asked_time": 1425368183, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "щедрость, дар, одаривать, награждать", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "survive", 
-          "user_know": 2, 
-          "last_asked_time": 1425300215, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "выжить, пережить, дожить", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "go ahead", 
-          "user_know": 2, 
-          "last_asked_time": 1425368186, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "продолжай, иди вперёд", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "elapsed (time)", 
-          "user_know": 2, 
-          "last_asked_time": 1425368189, 
+          "user_know": 0, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "прошедшее (время)", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "arbitrary", 
           "user_know": 0, 
-          "last_asked_time": 1425368192, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "произвольный, случайный, капризный", 
-          "asked": 7
+          "asked": 0
         }, 
         {
           "word": "prohibit", 
           "user_know": 0, 
-          "last_asked_time": 1425368833, 
-          "user_dunno": 2, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "запрещать, возбранять, мешать, препятствовать", 
-          "asked": 11
+          "asked": 0
         }, 
         {
           "word": "permit", 
           "user_know": 0, 
-          "last_asked_time": 1425368837, 
-          "user_dunno": 2, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "разрешать, допускать, разрешение, допуск", 
-          "asked": 10
+          "asked": 0
         }, 
         {
           "word": "confluence", 
           "user_know": 0, 
-          "last_asked_time": 1425368200, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "слияние, соединение, сосредоточение, скопление", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "do note", 
           "user_know": 0, 
-          "last_asked_time": 1425368203, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "обратите внимание", 
-          "asked": 6
+          "asked": 0
         }, 
         {
           "word": "adopt", 
           "user_know": 0, 
-          "last_asked_time": 1425368829, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "усвоить, перенять, заимствовать, усыновлять", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "however", 
           "user_know": 0, 
-          "last_asked_time": 1425368842, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "однако, тем не менее, как бы ни", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "debunk", 
           "user_know": 0, 
-          "last_asked_time": 1425368847, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "разоблачать, развенчивать", 
-          "asked": 5
+          "asked": 0
         }, 
         {
           "word": "obtain", 
           "user_know": 0, 
-          "last_asked_time": 1425368852, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "получать, добывать, приобретать, доставать", 
-          "asked": 3
+          "asked": 0
         }, 
         {
           "word": "obligatory", 
           "user_know": 0, 
-          "last_asked_time": 1425368855, 
-          "user_dunno": 2, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "обазятельный, непременный, необходимый", 
-          "asked": 4
+          "asked": 0
         }, 
         {
           "word": "legacy", 
           "user_know": 0, 
-          "last_asked_time": 1425368859, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "(прил) устаревший, (сущ) наследство", 
-          "asked": 2
+          "asked": 0
         }, 
         {
           "word": "recent", 
           "user_know": 0, 
-          "last_asked_time": 1425286878, 
+          "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
           "translation": "недавний, последний; новейший, свежий, современный", 
-          "asked": 1
+          "asked": 0
         }, 
         {
           "word": "besides", 
@@ -988,33 +987,61 @@
           "asked": 0
         }, 
         {
-          "last_asked_time": 0, 
-          "user_dunno": 0, 
-          "mistakes": 0, 
           "word": "bold", 
+          "user_know": 0, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
+          "mistakes": 0, 
           "translation": "отважный, храбрый, дерзновенный", 
-          "user_know": 0, 
           "asked": 0
         }, 
         {
-          "last_asked_time": 0, 
-          "user_dunno": 0, 
-          "mistakes": 0, 
           "word": "diversity", 
-          "translation": "разнообразие, многообразие", 
           "user_know": 0, 
-          "asked": 0
-        }, 
-        {
           "last_asked_time": 0, 
           "user_dunno": 0, 
           "mistakes": 0, 
+          "translation": "разнообразие, многообразие", 
+          "asked": 0
+        }, 
+        {
           "word": "value", 
-          "translation": "(сущ) значение, ценность; (глаг) ценить", 
           "user_know": 0, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
+          "mistakes": 0, 
+          "translation": "(сущ) значение, ценность; (глаг) ценить", 
+          "asked": 0
+        }, 
+        {
+          "word": "opinionated", 
+          "user_know": 0, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
+          "mistakes": 0, 
+          "translation": "самоуверенный, упрямый, своевольный", 
+          "asked": 0
+        }, 
+        {
+          "word": "occupation", 
+          "user_know": 0, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
+          "mistakes": 0, 
+          "translation": "профессия, род занятий; временное пользование, аренда; завоевание, захват", 
+          "asked": 0
+        }, 
+        {
+          "word": "spouse", 
+          "user_know": 0, 
+          "last_asked_time": 0, 
+          "user_dunno": 0, 
+          "mistakes": 0, 
+          "translation": "(сущ) супруг(а); (глаг) вступать в брак", 
           "asked": 0
         }
       ], 
+      "file": "D:\\proger\\git\\english\\dict.csv", 
       "performed_tests": 0
     }
   ]

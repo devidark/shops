@@ -245,6 +245,7 @@ class Learner:
         test = 0
         kTestsToPerform = 50
         kVariantsNum = 5
+        user_ans_idx = 0
         while test < kTestsToPerform:
             test += 1
 
@@ -263,12 +264,9 @@ class Learner:
             while True:
                 try:
                     user_ans_idx = int(raw_input("Enter number of answer (0-exit; 8-I know, ask less often; 9-Don't know, ask more often): "))
-                except:
-                    print "Bad number, try again"
+                except Exception, e:
+                    print "Bad number, try again (exc: %s)" % str(e)
                     continue
-                if user_ans_idx == 0:
-                    print "Exiting."
-                    sys.exit(0)
                 if user_ans_idx == 8:
                     print "OK, will ask this word less often"
                     selected_word['user_know'] += 2
@@ -277,9 +275,13 @@ class Learner:
                     print "OK, will ask this word more often"
                     selected_word['user_dunno'] += 2
                     continue
-                if user_ans_idx < 1 or user_ans_idx > kVariantsNum:
+                if user_ans_idx < 0 or user_ans_idx > kVariantsNum:
                     print "Bad number, try again"
                     continue
+                break
+
+            if user_ans_idx == 0:
+                print "Exiting."
                 break
 
             user_ans_idx -= 1
@@ -294,8 +296,16 @@ class Learner:
             selected_word['asked'] += 1
             selected_word['last_asked_time'] = int(time.time())
 
+        if user_ans_idx == 0:   # just exit
+            return True
+
         print
         print "That's good. All tests have done!"
+        try:
+            raw_input("... press Enter to continue ...")
+        except:
+            pass
+        return True
 
     #---------------------------------------------------------------------------
     # return: ( selected_word, task_text, [ans_varians_texts], right_variant_index )
