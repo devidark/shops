@@ -54,7 +54,8 @@ init_Dict = {
     'file': '',                 # абсолютный путь к словарю
     'hash': 0,                  # хеш файла
     'words': [],                # слова
-    'performed_tests': 0        # абсолютное количество выполненных тестов
+    'performed_tests': 0,       # абсолютное количество выполненных тестов
+    'begin_study_date': ''      # дата начала обучения
 }
 
 init_User = {
@@ -166,7 +167,7 @@ class User:
         words = dict()
         try:
             with open(fname) as f:
-                csv_reader = csv.reader(f, delimiter=';')
+                csv_reader = csv.reader(f, delimiter='\t')
                 n = 0
                 for row in csv_reader:
                     n += 1
@@ -188,7 +189,9 @@ class User:
             wtext = w['word']
             if wtext in words:
                 (translation, index) = words[wtext]
-                w['translation'] = translation
+                if w['translation'] != translation:
+                    w['translation'] = translation
+                    w['user_dunno'] += 2        # перевод обновился - повторяем чуток чаще
                 del words[wtext]
 
         # добавляем оставшиеся слова, которые не были найдены
@@ -263,9 +266,13 @@ class Learner:
 
             while True:
                 try:
-                    user_ans_idx = int(raw_input("Enter number of answer (0-exit; 8-I know, ask less often; 9-Don't know, ask more often): "))
+                    user_ans_idx = int(raw_input("Enter number of answer (0-exit; 7-I know this very well; 8-Ask less often; 9-Ask more often): "))
                 except Exception, e:
                     print "Bad number, try again (exc: %s)" % str(e)
+                    continue
+                if user_ans_idx == 7:
+                    print "OK, will ask this word much later"
+                    selected_word['user_know'] += len(self.progress)
                     continue
                 if user_ans_idx == 8:
                     print "OK, will ask this word less often"
@@ -295,6 +302,8 @@ class Learner:
             # save results
             selected_word['asked'] += 1
             selected_word['last_asked_time'] = int(time.time())
+
+            self.d['performed_tests'] += 1
 
         if user_ans_idx == 0:   # just exit
             return True
@@ -383,6 +392,7 @@ def main():
         dict_file = sys.argv[2]
     if len(sys.argv) > 3:
         encoding = sys.argv[3]
+	logger.Log("Encoding: " + encoding)
 
     # загружаем/создаём юзера
     user_dir = '.'
@@ -405,7 +415,7 @@ def main():
 
     # обучаемся
     learner = Learner(user.u['dicts'][studying_dict])
-    learner.learn('cp866')
+    learner.learn('utf8')
 
     return 0
 
