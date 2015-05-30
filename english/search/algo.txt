@@ -1,0 +1,6 @@
+Возможные алгоритмы:
+    Удаление стоп-слов:
+        - part-of-speech tagging - т.е. распознавание предлогов, союзов и т.п. с помощью POStagging'а.
+
+    Классификация:
+        - Multi-Value Classification of Very Short Texts - PDF в закладках;
