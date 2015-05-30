@@ -10,9 +10,11 @@ import lxml.html
 import urllib2
 import urlparse
 
+'''
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
+'''
 
 if len(sys.argv) < 2:
     print >> sys.stderr, "Usage:\n  " + sys.argv[0] + " file"
