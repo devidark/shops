@@ -6,6 +6,7 @@
 import os
 import sys
 import json
+import random
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -20,7 +21,7 @@ cats = dict()
 n2cat = dict()
 cat_n = 0
 
-def LoadData(json_file, out_docs, out_target):
+def LoadData(json_file, out_data):
     global cats
     global n2cat
     global cat_n
@@ -34,6 +35,10 @@ def LoadData(json_file, out_docs, out_target):
         title = rec['title']
         desc = rec['desc']
 
+        '''sss = u"%s\t%s\t%s" % (cat_name, title, desc)
+        print sss.encode('utf-8')
+        continue'''
+
         c = cat_name
         cat_id = cats.get(c, None)
 
@@ -43,29 +48,42 @@ def LoadData(json_file, out_docs, out_target):
             cat_id = cat_n
             cat_n += 1
 
-        out_docs.append( title )
-        #out_docs.append( desc )
-        out_target.append( cat_id )
+        out_data.append( (title, cat_id) )
+        #out_data.append( (desc, cat_id) )
 
 def CatId2Name(id):
+    global n2cat
     return n2cat.get(id, '<UNKNOWN>')
+
 
 #-------------------------------------------------------------------------------
 # read
 scan_json_file = sys.argv[1]
 test_json_file = sys.argv[2]
 
-docs = list()
-target = list()
-LoadData(scan_json_file, docs, target)
+data = list()
+LoadData(scan_json_file, data)
+print >> sys.stderr, "Loaded %d documents" % len(data)
 
-print >> sys.stderr, "Loaded %d documents" % len(docs)
+# перемешиваем выборку и подготавливаем из неё обучающее и тестовое множества
+random.seed()
+random.shuffle( data )
 
-# parse
+r = len(data)*2/3
+train_data = data[:r]
+test_data = data[r:]
+
+train_docs   = [d for (d, c) in train_data]
+train_target = [c for (d, c) in train_data]
+
+test_docs   = [d for (d, c) in test_data]
+test_target = [c for (d, c) in test_data]
+
+# парсим
 # v = CountVectorizer()
 # v = TfidfVectorizer(ngram_range=(1,1))
 # v = TfidfVectorizer(ngram_range=(1,2))
-
+#-----------------------------------------------------------
 import nltk.stem
 russian_stemmer = nltk.stem.SnowballStemmer('russian')
 
@@ -73,37 +91,41 @@ class StemmedTfidfVectorizer( TfidfVectorizer ):
     def build_analyzer(self):
         analyzer = super(TfidfVectorizer, self).build_analyzer()
         return lambda doc: (russian_stemmer.stem(word) for word in analyzer(doc))
+#-----------------------------------------------------------
 
 v = StemmedTfidfVectorizer(min_df=1, ngram_range=(1,2))
-train_data = v.fit_transform(docs)
-# print train_data.toarray()
+train_features = v.fit_transform(train_docs)
 
 # train
 print >> sys.stderr, "Learning..."
 from sklearn import svm
+from sklearn.linear_model import SGDClassifier
 
-cls = svm.SVC()
+# cls = svm.SVC()
+cls = SGDClassifier(loss='hinge', penalty='l2', alpha=1e-3, n_iter=5, random_state=42)
+
 print >> sys.stderr, cls
-cls.fit(train_data, target)
+cls.fit(train_features, train_target)
 print >> sys.stderr, " - done"
 
 #-------------------------------------------------------------------------------
 # test
 print >> sys.stderr, "Testing..."
 
-test_docs = list()
+''' test_docs = list()
 test_target = list()
-test_predicted = list()
 LoadData(test_json_file, test_docs, test_target)
-print >> sys.stderr, "Loaded %d test documents" % len(test_docs)
+print >> sys.stderr, "Loaded %d test documents" % len(test_docs) '''
+
+test_predicted = list()
 
 eq = 0
 for i in xrange( len(test_docs) ):
     d = test_docs[i]
     t = test_target[i]
 
-    d_data = v.transform([d])
-    pred_t = cls.predict(d_data)
+    test_features = v.transform([d])
+    pred_t = cls.predict(test_features)
 
     pred_t = pred_t[0]
 
