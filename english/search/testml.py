@@ -1,7 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# sudo apt-get install python-sklearn python-nltk
+#
+# Если у тебя нет sklearn и nltk, запусти на своём Бубне:
+#   sudo apt-get install python-sklearn python-nltk
+# Либо просто поставь для питона либы:
+#   pip install sklearn
+#   pip install nltk
+#
 
 import os
 import sys
@@ -12,9 +18,17 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 #-------------------------------------------------------------------------------
-if len(sys.argv) < 3:
-    print >> sys.stderr, "Usage:\n  %s <scan_json_file> <test_scan_json_file>" % sys.argv[0]
+# parse argv
+if len(sys.argv) < 2:
+    print >> sys.stderr, "Usage:\n  %s <scan_json_file> [keyboard]" % sys.argv[0]
     sys.exit(1)
+
+scan_json_file = sys.argv[1]
+
+test_from_keyboard = False
+if len(sys.argv) > 2 and sys.argv[2] == 'keyboard':
+    test_from_keyboard = True
+# test_json_file = sys.argv[2]
 
 #-------------------------------------------------------------------------------
 cats = dict()
@@ -58,9 +72,6 @@ def CatId2Name(id):
 
 #-------------------------------------------------------------------------------
 # read
-scan_json_file = sys.argv[1]
-test_json_file = sys.argv[2]
-
 data = list()
 LoadData(scan_json_file, data)
 print >> sys.stderr, "Loaded %d documents" % len(data)
@@ -110,42 +121,52 @@ print >> sys.stderr, " - done"
 
 #-------------------------------------------------------------------------------
 # test
-print >> sys.stderr, "Testing..."
+if test_from_keyboard:
+    # predict from keyboard
+    print "And now let's predict from keyboard.\nType any query in russian language:"
+    while (True):
+        line = raw_input()
+        test_features = v.transform([line])
+        pred_t = cls.predict(test_features)
+        pred_t = pred_t[0]
+        print "\t%d=%s" % (pred_t, CatId2Name(pred_t))
+else:
+    # predict from the same collection
+    print >> sys.stderr, "Testing..."
 
-''' test_docs = list()
-test_target = list()
-LoadData(test_json_file, test_docs, test_target)
-print >> sys.stderr, "Loaded %d test documents" % len(test_docs) '''
+    # test_docs = list()
+    # test_target = list()
+    # LoadData(test_json_file, test_docs, test_target)
+    # print >> sys.stderr, "Loaded %d test documents" % len(test_docs) '''
 
-test_predicted = list()
+    test_predicted = list()
 
-eq = 0
-for i in xrange( len(test_docs) ):
-    d = test_docs[i]
-    t = test_target[i]
+    eq = 0
+    for i in xrange( len(test_docs) ):
+        d = test_docs[i]
+        t = test_target[i]
 
-    test_features = v.transform([d])
-    pred_t = cls.predict(test_features)
+        test_features = v.transform([d])
+        pred_t = cls.predict(test_features)
 
-    pred_t = pred_t[0]
+        pred_t = pred_t[0]
 
-    label = "BAD"
-    if t == pred_t:
-        eq += 1
-        label = "OK"
+        label = "BAD"
+        if t == pred_t:
+            eq += 1
+            label = "OK"
 
-    prn = u"%d\t%s\t'%s'\texpected/predicted: %d=%s / %d=%s" % (i, label, d, t, CatId2Name(t), pred_t, CatId2Name(pred_t))
-    print prn.encode('utf-8')
+        prn = u"%d\t%s\t'%s'\texpected/predicted: %d=%s / %d=%s" % (i, label, d, t, CatId2Name(t), pred_t, CatId2Name(pred_t))
+        print prn.encode('utf-8')
 
-    test_predicted.append( pred_t )
+        test_predicted.append( pred_t )
 
-#-------------------------------------------------------------------------------
-# show metrics
-# accuracy = float(eq) / float(len(test_docs))
-# print "Total: %d, equal: %d, accuracy: %f" % (len(test_docs), eq, accuracy)
-from sklearn import metrics
+    # show metrics
+    # accuracy = float(eq) / float(len(test_docs))
+    # print "Total: %d, equal: %d, accuracy: %f" % (len(test_docs), eq, accuracy)
+    from sklearn import metrics
 
-cat_names = [CatId2Name(x) for x in xrange(cat_n)]
-s = metrics.classification_report(test_target, test_predicted, target_names=cat_names)
-print
-print s.encode('utf-8')
+    cat_names = [CatId2Name(x) for x in xrange(cat_n)]
+    s = metrics.classification_report(test_target, test_predicted, target_names=cat_names)
+    print
+    print s.encode('utf-8')
