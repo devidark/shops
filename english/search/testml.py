@@ -2,11 +2,19 @@
 # -*- coding: utf-8 -*-
 
 #
-# Если у тебя нет sklearn и nltk, запусти на своём Бубне:
-#   sudo apt-get install python-sklearn python-nltk
+# Если у Ubuntu и у тебя нет python2.7 запусти на своём Бубне:
+#   sudo apt-get install python2.7
+# Затем нужно установить необходимые модули:
+#   sudo apt-get install python-nltk \
+#                      build-essential python-dev python-setuptools \
+#                      python-numpy python-scipy \
+#                      libatlas-dev libatlas3gf-base
 # Либо просто поставь для питона либы:
-#   pip install sklearn
+#   pip install numpy scipy sklearn
 #   pip install nltk
+#
+# На МакОСи должно сработать вот так (не пробовал; предполагается, что питон2.7 уже стоит):
+#   pip install -U numpy scipy scikit-learn
 #
 
 import os
