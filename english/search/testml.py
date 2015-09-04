@@ -14,7 +14,7 @@
 #   pip install nltk
 #
 # На МакОСи должно сработать вот так (не пробовал; предполагается, что питон2.7 уже стоит):
-#   pip install -U numpy scipy scikit-learn
+#   pip install -U numpy scipy scikit-learn nltk
 #
 
 import os
@@ -88,9 +88,13 @@ print >> sys.stderr, "Loaded %d documents" % len(data)
 random.seed()
 random.shuffle( data )
 
-r = len(data)*2/3
-train_data = data[:r]
-test_data = data[r:]
+if test_from_keyboard:
+    train_data = data
+    test_data = []
+else:
+    r = len(data)*2/3
+    train_data = data[:r]
+    test_data = data[r:]
 
 train_docs   = [d for (d, c) in train_data]
 train_target = [c for (d, c) in train_data]

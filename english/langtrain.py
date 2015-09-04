@@ -11,14 +11,15 @@
     - через 5 минут;
     - через час;
     - через день;
-    - через 3 дня.
+    - через 3 дня;
+    - и т.д. до какого-то предела.
 Такой подход заставляет впечатываться информацию в долгосрочную память.
 
 Основная идея данной проги в том, чтобы построить курс эффективно и ненавязчиво
 на основе указанного метода:
-1. примерно раз в 40 минут-в час пользователю предлагается серия простых тестов
+1. примерно раз в 40 минут-в час-полтора пользователю предлагается серия простых тестов
    длительностью минут на 5. Мы будем засекать не по времени, а по количеству тестов:
-   скажем, буквально 40-60;
+   скажем, буквально 30-60;
 2. эта серия тестов должна автоматически предлагаться пользователю в такой последовательности,
    чтобы напоминания новых слов происходило с такой же периодичностью, что и описано выше
    (примерно через 10 секунд, примерно через минуту, примерно через 5 минут...).
@@ -27,6 +28,14 @@
    усвоил то или иное слово. Например, он может путать слова "obvious" и "oblivious",
    тогда плохо усвоенные слова программа будет напоминать чаще, чем остальные и до тех пор,
    пока обучаемый их не запомнит основательно.
+
+-- 26.05.2015 --
+ - Практика показала, что 50 заданий - это слишком нудно.
+   Пробую уменьшить до 30, психологически кажется, что это более приятно и просто.
+ - Также заметил, что последний порог напоминания фраз в 1 неделю - слишком мало.
+   Когда слов достаточно много, то за неделю ты не успеваешь пройти все новые слова,
+   а старые слова начинают задалбывать.
+   Пробую добавить ещё два порога: 3 и 6 недель.
 '''
 
 import os
@@ -213,21 +222,32 @@ class User:
 class Learner:
     # progress in seconds
     progress = [
-        0,
-        15,
-        60,
-        3 * 60,
-        5 * 60,
-        40 * 60,
-        3 * 60 * 60,
-        5 * 60 * 60,
-        24 * 60 * 60,
-        3 * 24 * 60 * 60,
-        7 * 24 * 60 * 60
+                   0,
+                  15,
+                  60,
+                3*60,
+                5*60,
+               40*60,
+             3*60*60,
+             5*60*60,
+            24*60*60,
+          3*24*60*60,   # 3 days
+          7*24*60*60,   # 1 week
+        3*7*24*60*60,   # 3 weeks
+        6*7*24*60*60,   # 6 weeks
+       12*7*24*60*60    # 12 weeks
     ]
 
     def __init__(self, udict):
         self.d = udict
+
+    kUsage = ' (0-exit; 7-I know this very well; 8-Ask less often; 9-Ask more often)'
+
+    def _ask_word(self):
+        pass
+
+    def _ask_number(self):
+        pass
 
     #---------------------------------------------------------------------------
     def learn(self, output_encoding='utf8'):
@@ -237,16 +257,19 @@ class Learner:
                по написанию - отбирать по дистанции левинштейна;
                для этого, возможно, сохранять отдельно таблицу схожести слов, чтобы не рассчитывать эти дистации каждый раз.
         [+] 2. рандомно выбирать направление перевода - от инглиша к русскому или наоборот.
-            3. после последнего задания сделать паузу.
-            4. рандомно перемешивать варианты перевода; варианты перевода обычно разделяются точкой с запятой ';'.
+        [+] 3. после последнего задания сделать паузу.
+        [+] 4. рандомно перемешивать варианты перевода; варианты перевода обычно разделяются точкой с запятой ';'.
                перемешивать также между вариантами вариантов, которые разделяются уже просто запятой ','.
+            5. Давать юзеру вводить перевод с клавы, когда направление перевода от русского к инглишу.
+               Возможно даже детектить, что пользователь ввёл "почти" правильно, сравнивая правильный ответ с юзерским по
+               дистанции левинштейна и говорить явно - ты почти прав, но ошибся чуток, приятель.
         '''
 
         if len(self.d['words']) == 0:
             raise Exception("Can't to teach you. Empty dict!")
 
         test = 0
-        kTestsToPerform = 50
+        kTestsToPerform = 30
         kVariantsNum = 5
         user_ans_idx = 0
         while test < kTestsToPerform:
@@ -261,15 +284,39 @@ class Learner:
             print
             print "   %s" % task_text.encode(output_encoding)
             print
-            for i in xrange(len(variants)):
-                print "%d. %s" % (i+1, variants[i].encode(output_encoding))
+
+            user_ans_idx = -1
 
             while True:
-                try:
-                    user_ans_idx = int(raw_input("Enter number of answer (0-exit; 7-I know this very well; 8-Ask less often; 9-Ask more often): "))
-                except Exception, e:
-                    print "Bad number, try again (exc: %s)" % str(e)
-                    continue
+                # если направление от перевода к иностранному слову, спрашиваем текст слова
+                if trans_to_word:
+                    user_word = ''
+                    while len(user_word) == 0:
+                        user_word = raw_input("Enter translation %s: " % Learner.kUsage)
+                        user_word = user_word.strip().decode('utf-8').lower()
+                        if len(user_word) == 0:
+                            print "Answer is empty. Try again."
+
+                    # если получается сконвертить в int, выходим из цикла и проверяем
+                    try:
+                        user_ans_idx = int(user_word)
+                    except:
+                        for i in xrange(len(variants)):
+                            if user_word == variants[i]:
+                                user_ans_idx = i + 1
+                                break
+                else:
+                    for i in xrange(len(variants)):
+                        print "%d. %s" % (i+1, variants[i].encode(output_encoding))
+
+                    while True:
+                        try:
+                            user_ans_idx = int(raw_input("Enter number of answer %s: " % Learner.kUsage))
+                            break
+                        except Exception, e:
+                            print "Bad number, try again (exc: %s)" % str(e)
+                            continue
+
                 if user_ans_idx == 7:
                     print "OK, will ask this word much later"
                     selected_word['user_know'] += len(self.progress)
@@ -282,9 +329,6 @@ class Learner:
                     print "OK, will ask this word more often"
                     selected_word['user_dunno'] += 2
                     continue
-                if user_ans_idx < 0 or user_ans_idx > kVariantsNum:
-                    print "Bad number, try again"
-                    continue
                 break
 
             if user_ans_idx == 0:
@@ -296,7 +340,10 @@ class Learner:
             if user_ans_idx == ans_idx:
                 print "That's right!"
             else:
-                print " *** NO *** the right variant is %d" % (ans_idx+1)
+                if trans_to_word:
+                    print " *** NO *** the right answer is '%s'" % (variants[ans_idx])
+                else:
+                    print " *** NO *** the right variant is %d" % (ans_idx+1)
                 selected_word['mistakes'] += 1
 
             # save results
@@ -320,9 +367,11 @@ class Learner:
     # return: ( selected_word, task_text, [ans_varians_texts], right_variant_index )
     def _generate_task(self, variants_num, trans_to_word=True):
         # выбираем слово для теста
+        # - сначала выбираем произвольное слово на случай, если слово всего лишь одно или все слова уже пройдены, а тестировать что-то надо
         rand_widx = random.randint(0, len(self.d['words'])-1)
         (selected_word, selected_word_period) = self._get_word_and_period(rand_widx)
 
+        # - теперь перебираем все слова на предмет достижения времени - не пора ли повторить его
         for idx in xrange(len(self.d['words'])):
             (word, word_period) = self._get_word_and_period(idx)
 
@@ -353,7 +402,7 @@ class Learner:
 
         already_here = False
         ans_idx = 0
-        for i in xrange(0, len(variants)):  # а нет ли среди сэмпла того, что мы выбрали
+        for i in xrange(0, len(variants)):  # а нет ли среди сэмплов того, что мы выбрали
             if variants[i] == ans:
                 already_here = True
                 ans_idx = i
