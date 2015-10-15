@@ -40,6 +40,7 @@
 
 import os
 import sys
+import re
 import json
 import csv
 import time
@@ -242,27 +243,37 @@ class Learner:
         self.d = udict
 
     kUsage = ' (0-exit; 7-I know this very well; 8-Ask less often; 9-Ask more often)'
+    
+    kNormCutBrances = re.compile(r'\([^)]*\)', flags=re.UNICODE)
+    kNormRe = re.compile(r'[^\w]+', flags=re.UNICODE)
 
-    def _ask_word(self):
-        pass
-
-    def _ask_number(self):
-        pass
+    def _normalize_str(self, unicode_str):
+        unicode_str = Learner.kNormCutBrances.sub(' ', unicode_str)
+        unicode_str = Learner.kNormRe.sub(' ', unicode_str)
+        unicode_str = unicode_str.strip().lower()
+        return unicode_str
 
     #---------------------------------------------------------------------------
     def learn(self, output_encoding='utf8'):
         '''
         TODO:
             1. для конкретного варианта перевода предлагать список слов не случайных, а максимально похожих друг на друга
-               по написанию - отбирать по дистанции левинштейна;
+               по написанию - отбирать по дистанции ливинштейна;
                для этого, возможно, сохранять отдельно таблицу схожести слов, чтобы не рассчитывать эти дистации каждый раз.
         [+] 2. рандомно выбирать направление перевода - от инглиша к русскому или наоборот.
         [+] 3. после последнего задания сделать паузу.
         [+] 4. рандомно перемешивать варианты перевода; варианты перевода обычно разделяются точкой с запятой ';'.
                перемешивать также между вариантами вариантов, которые разделяются уже просто запятой ','.
-            5. Давать юзеру вводить перевод с клавы, когда направление перевода от русского к инглишу.
+        [+] 5. Давать юзеру вводить перевод с клавы, когда направление перевода от русского к инглишу.
                Возможно даже детектить, что пользователь ввёл "почти" правильно, сравнивая правильный ответ с юзерским по
                дистанции левинштейна и говорить явно - ты почти прав, но ошибся чуток, приятель.
+        [+] 6. Предлагать вводить с клавы только если:
+                + количество ответов > 5;
+                + доля ошибок не более 30%.
+        [+] 7. С клавы, нормализация:
+            - у настоящего результата вырезать всё, что в скобках: (...пояснение...)
+            + удалять символы (всё, что не буква);
+            + нормализовывать ответ и сверяемый результат;
         '''
 
         if len(self.d['words']) == 0:
@@ -277,6 +288,10 @@ class Learner:
 
             trans_to_word = (random.randint(0, 1) == 0)
             (selected_word, task_text, variants, ans_idx) = self._generate_task(kVariantsNum, trans_to_word)
+            
+            # справшиваем ответ с клавы только если кол-во ответов > 5 и доля ошибок менее 30%
+            mistakes_part = float(selected_word['mistakes']) / float(selected_word['asked']) if selected_word['asked'] > 0 else 0.0
+            trans_to_word = trans_to_word and (selected_word['asked'] > 5 and mistakes_part < 0.3)
 
             # - спрашиваем
             print
@@ -288,12 +303,12 @@ class Learner:
             user_ans_idx = -1
 
             while True:
-                # если направление от перевода к иностранному слову, спрашиваем текст слова
+                # если направление от перевода к иностранному слову, спрашиваем текст слова с клавиатуры
                 if trans_to_word:
                     user_word = ''
                     while len(user_word) == 0:
                         user_word = raw_input("Enter translation %s: " % Learner.kUsage)
-                        user_word = user_word.strip().decode('utf-8').lower()
+                        user_word = self._normalize_str(user_word.decode('utf-8'))
                         if len(user_word) == 0:
                             print "Answer is empty. Try again."
 
@@ -302,7 +317,8 @@ class Learner:
                         user_ans_idx = int(user_word)
                     except:
                         for i in xrange(len(variants)):
-                            if user_word == variants[i]:
+                            variant = self._normalize_str( variants[i] )
+                            if user_word == variant:
                                 user_ans_idx = i + 1
                                 break
                 else:
